@@ -1,3 +1,18 @@
 language: node_js
 node_js:
   - "6"
+
+deploy:
+  - deploy:
+    provider: bluemixcloudfoundry
+    skip_cleanup: true
+    edge:
+      source: adamkingit/dpl
+      branch: master
+    username: yangjenn@us.ibm.com
+    password: America+England0
+    region: us
+    organization: yangjenn
+    space: containertest
+    on:
+      branch: master
