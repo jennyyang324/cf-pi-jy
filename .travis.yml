@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - "6"
-
+- '6'
+deploy:
+  edge: true
+  provider: bluemixcloudfoundry
+  username: yangjenn@us.ibm.com
+  password:
+    secure: igb7MIr49d5mm/fhRzt3d1lQ46179V7wCdDSHU6ZVgl02Q8nNBv44Rsb0oHpL/Oao7fW+5KXpVpY5wZTusqrtAonqK95RuOcx1GIfY2NJ1yEwQX4jnmpgsdw1Gyd1du5rxGB6DvwkdgcQb6Py/23NhXgyM3Xh5aowb0SUAxLAjdPaTHWyPv93E8UBKcUQybfpvYcuKqZW5Nm1ziehbV0udd55Sx5VJI8v62Uok+qWJGCKDOQtvcDRcuFmQs3731Ic9WixVyuph8mrC/7RVuRTNVfGXxXCmuV7WJ/Y2PZjQ4JQ685eXVR7CKqyyOgbc77MxgpkddI6sFyFJ2wqgiI2RPtiUPJEX0zHXJveq6dkhvW+HADq/itsTFi9bO45hG6jV8LwR99p+7M6INmgGwFp9rZ1dlXpFs7Nwigw4hvCKuzTuiWzR2Kq67/ogRr/zyzPYaqqg5GqrR28xmpcqaT04k7QH59T2XCW706aX3hWSwmKnyim3mfdE7XiDXT71v+9DLycwJKD23vbZ3rGoHLPJzMfCObI8H2U7tMC0U2e5NgK1wyycNXMNaYT3A9RShhd9s2JKqfw7s+mOSUh0960QzTYz2IKCUKahKYamFW8PiLISEuS5fuiqkOyd0KPyFY+xhGcL+zOJva3Mvn1lsiBqygdDPTmYJDq+IhZaO78z8=
+  organization: yangjenn
+  space: containertest
